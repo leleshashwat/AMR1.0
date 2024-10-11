@@ -1,0 +1,11 @@
+../Core/Src/MPU6050.c:39:6:MPU6050_Config	24	static
+../Core/Src/MPU6050.c:130:9:MPU6050_Get_SMPRT_DIV	16	static
+../Core/Src/MPU6050.c:140:6:MPU6050_Set_SMPRT_DIV	16	static
+../Core/Src/MPU6050.c:146:9:MPU6050_Get_FSYNC	16	static
+../Core/Src/MPU6050.c:156:6:MPU6050_Set_FSYNC	24	static
+../Core/Src/MPU6050.c:168:6:MPU6050_Get_Accel_RawData	32	static
+../Core/Src/MPU6050.c:193:6:MPU6050_Get_Accel_Scale	24	static
+../Core/Src/MPU6050.c:206:6:MPU6050_Get_Accel_Cali	32	static
+../Core/Src/MPU6050.c:218:6:MPU6050_Get_Gyro_RawData	16	static
+../Core/Src/MPU6050.c:229:6:MPU6050_Get_Gyro_Scale	24	static
+../Core/Src/MPU6050.c:241:6:_Accel_Cali	32	static

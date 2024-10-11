@@ -1,0 +1,67 @@
+
+
+
+const device_id = 0xFF
+
+
+
+
+const command_data = {
+
+                        0x02:buzzer,
+                        0x03:voltage,
+                        0x04:led_strip,
+                        0x05:fan,
+                        0x06:imu_data,
+
+                     }
+
+
+
+
+def communication_wrapper(uart_1_read):
+                length = uart_1_read(1)
+
+
+
+
+validate_data = IPC_commands_validation(data)
+
+// uart_1_read = 0xFF Ox02 0x01 0x04 0x01 0x04 0x05 0x06
+
+// length = 8
+
+   command_byte = uart_1_read(:4) // 0X02
+
+   if !validate_data:
+
+       display_message("Invalid data")
+       return False
+
+
+
+
+       fetch_function = command_data[command_byte] 
+
+
+
+
+       call_function = fetch_function(uart_1_read)
+
+
+
+
+
+
+def IPC_commands_validation(data):
+
+   if data[0] != device_id:
+
+       return False
+
+   if sum(data[0:(n-1)]) != data[n]:
+
+       return False
+
+   return True
+
